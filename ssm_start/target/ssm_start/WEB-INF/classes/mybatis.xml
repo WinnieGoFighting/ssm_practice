@@ -1,0 +1,52 @@
+<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+<!--<!DOCTYPE configuration-->
+<!--        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"-->
+<!--        "http://mybatis.org/dtd/mybatis-3-config.dtd">-->
+
+<!--<configuration>-->
+<!--    &lt;!&ndash;属性配置&ndash;&gt;-->
+<!--    <properties resource="db.properties"/>-->
+
+
+<!--    <settings>-->
+<!--        &lt;!&ndash; 日志技术&ndash;&gt;-->
+<!--        <setting name="logImpl" value="LOG4J"/>-->
+<!--        &lt;!&ndash; 延迟加载的相关配置&ndash;&gt;-->
+<!--        <setting name="lazyLoadingEnabled" value="true"/>-->
+<!--        <setting name="aggressiveLazyLoading" value="false"/>-->
+<!--        <setting name="lazyLoadTriggerMethods" value="clone"/>-->
+<!--    </settings>-->
+
+<!--    &lt;!&ndash; 类型别名&ndash;&gt;-->
+<!--&lt;!&ndash;    <typeAliases>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash; <typeAlias type="com.ni.mybatis.domain.User" alias="User"/>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash; 可以为包起别名，自动为该包中的类起别名，默认的别名是简单类名首字母小写，但其实类名不区分大小写&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <package name="com.ni.mybatis.domain"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </typeAliases>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;   配置数据库的环境 &ndash;&gt;-->
+<!--    &lt;!&ndash;   注意：以后事务管理器和连接池都是交给spring框架来管理的 &ndash;&gt;-->
+<!--    <environments default="dev">-->
+<!--        <environment id="dev">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            <dataSource type="POOLED">-->
+<!--                &lt;!&ndash;                <property name="driver" value="com.mysql.jdbc.Driver"/>&ndash;&gt;-->
+<!--                <property name="driver" value= "${driver}"/>-->
+<!--                &lt;!&ndash;                <property name="url" value="jdbc:mysql:///mybatis?useSSL=false"/>&ndash;&gt;-->
+<!--                <property name="url" value="${url}"/>-->
+<!--                &lt;!&ndash;                <property name="username" value="root"/>&ndash;&gt;-->
+<!--                <property name="username" value="${username}"/>-->
+<!--                &lt;!&ndash;                <property name="password" value="12345"/>&ndash;&gt;-->
+<!--                <property name="password" value="${password}"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+
+<!--    &lt;!&ndash;    关联映射文件&ndash;&gt;-->
+<!--    <mappers>-->
+<!--&lt;!&ndash;        <mapper resource="mapper/EmployeeMapper.xml"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <mapper resource="mapper/DepartmentMapper.xml"/>&ndash;&gt;-->
+<!--        <package name="com.ni.dao"/>-->
+<!--    </mappers>-->
+
+<!--</configuration>-->
